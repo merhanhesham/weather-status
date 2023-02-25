@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <link href="js/bootstrap.min.js" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="mainpage position-relative">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg pt-4"> <!--fixed-top-->
+                <div class="container">
+                  <a class="navbar-brand text-white fw-600" href="#"><div class="weatherLogo ">
+                    <img src="./images/logo@2x.png" alt="logo" class="d-inline-block pb-4 me-1" />
+                    <div class="logo-text d-inline-block text-white">
+                        <span class="d-block fw-bold">Weather</span>
+                        <small style="color:#BFC1C8;">tagline goes here</small>
+                    </div>
+                </div></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    
+                    <ul class="navbar-nav ms-auto fw-600 gap-2 nav">
+                      <li class="nav-item first-li">
+                        <a class="nav-link active" aria-current="page" href="#home" style="color: #009AD8;">Home</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link active text-white" aria-current="page" href="#about">News</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link active text-white" aria-current="page" href="#services">Live cameras</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link active text-white" aria-current="page" href="#blog">Photos</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link active text-white" aria-current="page" href="#contact">Contact</a>
+                      </li>
+            
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+           
+        <div class="bgImg position-absolute start-0 end-0">
+            <div class="container d-flex justify-content-center">
+              
+    
+                
+                <div class="findlocation ">
+                    <input placeholder="Find your location..." class="search" />
+                    <input type="button" value="find" class="findbtn" />
+                </div>
+            </div>
+            <div class="container weather">
+                <div class="weatherInfo ">
+                    <div class="row gx-0 mt-5">
+
+                        <div class="col-md-4">
+                            <div class="weathercontent1">
+                                <div class="date1 d-flex justify-content-between p-2 ">
+                                    <h6 class="firstDay">Friday</h6>
+                                    <h6 class="daymonth">24February</h6>
+                                </div>
+                                <div class="degree1 pt-4 px-3 p-2 ">
+                                    <h5 class="city">cairo</h5>
+                                    <div class="degree-img">
+                                        <h1 class="d-inline fw-bold text-white fs-1 maxtemp">12.8</h1><h1 class="d-inline fw-bold text-white">&#x2103;</h1>
+                                        <span class="conditionIcon"><img src="./images/113.webp" /></span>
+                                    </div>
+
+                                    <p class="weatherStatus1" style="color:#009AD8;">clear</p>
+                                    <ul type="none" class="weather-details ps-0">
+                                        <li><img src="./images/icon-umberella.png" class="me-1" /><span>20%</span>
+                                        </li>
+                                        <li><img src="./images/icon-wind@2x.png" class="me-1" /><span>18
+                                                km/h</span></li>
+                                        <li><img src="./images/icon-compass@2x.png" class="me-1" /><span>east</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="weathercontent text-center">
+                                <div class="date p-2 ">
+                                    <h6 class="day23">saturday</h6>
+
+                                </div>
+                                <div class="degree pt-4 px-3 p-2">
+                                    <span class="weatherstatusImg"><img src="./images/113.webp" /></span>
+                                    <div class="degree-img">
+                                        <h1 class="d-inline fw-bold text-white fs-1 maxtemp">12.8</h1><h1 class="d-inline fw-bold text-white">&#x2103;</h1><br>
+                                        <p class="mintemp d-inline">0.2</p><span>&#xb0;</span>
+                                        
+                                    </div>
+
+                                    <p class="weatherStatus mt-3" style="color:#009AD8;">clear</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="weathercontent text-center">
+                                <div class="date p-2 right-grid-brdr" style="background-color: #203354;"  >
+                                    <h6 class="day23">sunday</h6>
+
+                                </div>
+                                <div class="degree pt-4 px-3 p-2 right-gridbottom-brdr"style="background-color: #0C2D48;">
+                                    <span class="weatherstatusImg"><img src="./images/113.webp" /></span>
+                                    <div class="degree-img">
+                                        <h1 class="d-inline fw-bold text-white fs-1 maxtemp">12.8</h1><h1 class="d-inline fw-bold text-white">&#x2103;</h1><br>
+                                        <p class="d-inline mintemp">0.2</p><span>&#xb0;</span>
+                                        
+                                    </div>
+
+                                    <p class="weatherStatus mt-3" style="color:#009AD8;">clear</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bottomOfPage mt-5"style="background-color: #203354;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="container">
+                                <div class="findlocation ">
+                                    <input placeholder="Enter your email to subscribe..." class="search" />
+                                    <input type="button" value="Subscribe" class="findbtn" />
+                                </div>
+                                <p style="color:#BFC1C8;"class="py-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                            </div> 
+                        </div>
+                        <div class="col-md-3 offset-md-2">
+                            <div class="icons d-flex pt-5">
+                                <div class="social-media d-flex align-items-center justify-content-center ">
+                                  <span><i class="fa-brands fa-facebook-f fa-xl "></i></span>
+                                </div>
+                                <div class="social-media d-flex align-items-center justify-content-center">
+                                  <span><i class="fa-brands fa-instagram fa-xl "></i></span>
+                                </div>
+                                <div class="social-media d-flex align-items-center justify-content-center">
+                                  <span><i class="fa-brands fa-twitter fa-xl "></i></span>
+                                </div>
+                                <div class="social-media d-flex align-items-center justify-content-center">
+                                  <span><i class="fa-brands fa-pinterest fa-xl "></i></span>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js" rel="stylesheet"></script>
+    <script src="main.js" rel="stylesheet"></script>
+</body>
+
+</html>
