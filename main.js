@@ -35,7 +35,7 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 const daysInWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 async function test(x=cairo) {
-    var res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=495ffa9ee8d7440e8c6184322232402&q=${x}&days=3&aqi=no&alerts=no`)
+    var res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=495ffa9ee8d7440e8c6184322232402&q=${x}&days=3&aqi=no&alerts=no`)
     var finalres = await res.json();
     console.log(finalres);
 
@@ -51,7 +51,7 @@ async function test(x=cairo) {
 
 
     maxtemp.innerHTML = firstdayWeather.day.maxtemp_c;
-    conditionIcon.innerHTML = `<img src="http:${firstdayWeather.day.condition.icon}" />`;//leh link msh byzhr
+    conditionIcon.innerHTML = `<img src="https:${firstdayWeather.day.condition.icon}" />`;//leh link msh byzhr
     weatherStatus1.innerHTML = firstdayWeather.day.condition.text;
 
     for (var i = 0; i < day23.length; i++) {
@@ -70,7 +70,7 @@ async function test(x=cairo) {
         weatherStatus[i].innerHTML = finalres.forecast.forecastday[i + 1].day.condition.text;
     }
     for (var i = 0; i < weatherstatusImg.length; i++) {
-        weatherstatusImg[i].innerHTML = `<img src="http:${finalres.forecast.forecastday[i + 1].day.condition.icon}" />`;
+        weatherstatusImg[i].innerHTML = `<img src="https:${finalres.forecast.forecastday[i + 1].day.condition.icon}" />`;
     }
 
 }
